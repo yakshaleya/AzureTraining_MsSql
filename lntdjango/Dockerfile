@@ -11,7 +11,8 @@ WORKDIR /usr/src/app
 
 # Install dependencies
 COPY requirements.txt /usr/src/app/
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt -vv
+
 
 # Copy project
 COPY . /usr/src/app/
